@@ -1,0 +1,116 @@
+body {
+  margin: 0 auto;
+  max-width: 375px;
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #e9ecef;
+}
+body .userAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+body .avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+body header {
+  border-bottom: 1px solid #c6c6c6;
+  background: #fff;
+}
+body header .header__images {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px 17px 15px;
+}
+body header .logoOldg {
+  max-width: 127px;
+}
+body main {
+  background-color: #ededed;
+}
+body main .painter {
+  margin-bottom: 25px;
+  background-color: #fff;
+}
+body main .painter .container {
+  display: flex;
+  flex-direction: column;
+}
+body main .painter .container .painter__Id {
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 10px;
+  display: flex;
+  gap: 7px;
+}
+body main .painter .container .painter__Id .painter__Id--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main .painter .container .painter__Id .painter__Id--text h1 {
+  margin: 0;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+}
+body main .painter .container .painter__Id .painter__Id--text p {
+  margin: 0;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+}
+body main .painter .container .post-Picture {
+  width: 100%;
+}
+body main .painter .icons {
+  display: flex;
+  justify-content: space-between;
+  width: 104px;
+  height: 22px;
+  margin: 0;
+  padding-top: 21px;
+}
+body main .painter .icons .heart {
+  position: relative;
+}
+body main .painter .icons .heart:hover {
+  cursor: pointer;
+}
+body main .painter .icons input {
+  position: absolute;
+  opacity: 0;
+  z-index: 10;
+}
+body main .painter .icons input:checked ~ .fa-solid {
+  transition: transform 2000ms;
+  opacity: 1;
+}
+body main .painter .icons .fa-solid {
+  font-size: 21px;
+  position: absolute;
+  opacity: 0;
+}
+body main .painter .icons .fa-solid:hover {
+  cursor: pointer;
+}
+body main .painter .like__counter,
+body main .painter .comment,
+body main .painter .icons {
+  margin: 0;
+  padding-left: 10px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+body main .painter .like__counter,
+body main .painter .userId {
+  font-weight: 700;
+}
+body main .painter .comment {
+  padding-bottom: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

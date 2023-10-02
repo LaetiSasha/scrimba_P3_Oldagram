@@ -1,0 +1,117 @@
+body {
+	margin: 0 auto;
+	max-width: 375px;
+	font-family: "Source Sans 3", sans-serif;
+	background-color: #e9ecef;
+	.userAvatar {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+	.avatar {
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+	}
+	header {
+		border-bottom: 1px solid #c6c6c6;
+		background: #fff;
+		.header__images {
+			max-width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 16px 16px 17px 15px;
+			//align-items: stretch;
+		}
+		.logoOldg {
+			max-width: 127px;
+		}
+	}
+	main {
+		background-color: #ededed;
+		.painter {
+			margin-bottom: 25px;
+			background-color: #fff;
+			.container {
+				display: flex;
+				flex-direction: column;
+				.painter__Id {
+					padding-top: 10px;
+					padding-bottom: 11px;
+					padding-left: 10px;
+					display: flex;
+					gap: 7px;
+					.painter__Id--text {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						h1 {
+							margin: 0;
+							color: #000;
+							font-size: 13px;
+							font-weight: 700;
+						}
+						p {
+							margin: 0;
+							color: #000;
+							font-size: 12px;
+							font-weight: 400;
+						}
+					}
+				}
+				.post-Picture {
+					width: 100%;
+				}
+			}
+			.icons {
+				display: flex;
+				justify-content: space-between;
+				width: 104px;
+				height: 22px;
+				margin: 0;
+				padding-top: 21px;
+				.heart {
+					position: relative;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+				input {
+					position: absolute;
+					opacity: 0;
+					z-index: 10;
+					&:checked ~ .fa-solid {
+						transition: transform 2000ms;
+						//transform: scale(1);
+						opacity: 1;
+					}
+				}
+				.fa-solid {
+					font-size: 21px;
+					position: absolute;
+					//transform: scale(0);
+					opacity: 0;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+			.like__counter,
+			.comment,
+			.icons {
+				margin: 0;
+				padding-left: 10px;
+				font-size: 13px;
+				margin-bottom: 12px;
+			}
+			.like__counter,
+			.userId {
+				font-weight: 700;
+			}
+			.comment {
+				padding-bottom: 16px;
+			}
+		}
+	}
+}
